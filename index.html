@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>SecurePass Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+<section class="card">
+  <h1>SecurePass Generator</h1>     
+  <p class="subtitle"> Create a strong passwords for better cybersecurity</p>
+
+  <div class="password-box">
+    <input type="text" id="passwordOutput" readonly placeholder="Your password will appear here"/>
+    <button id="copyBtn">Copy</button>
+    </div>
+
+    <div class="option">
+      <label>Password length:<span id="lengthValue">12</span></label>
+      <input type="range" id="lengthRange" min="8" max="32" value="12"/>
+    </div>
+    
+    <div class="checkboxes">
+      <label><input type="checkbox" id="uppercase" checked/>Uppercase letter</label>
+      <label><input type="checkbox" id="lowercase" checked/>Lowercase letter</label>
+      <label><input type="checkbox" id="numbers" checked/>Numbers</label>
+      <label><input type="checkbox" id="symbols" checked/>Symbols</label>
+      
+    </div>
+
+    <button class="generate-btn" id="generateBtn">Generate Passsword</button>
+
+    <div class="strength">
+      <p>Password Strength:<span id="strengthText"></span></p>
+      <div id="strength-bar">
+        <div id="strengthFill">
+
+        </div>
+         </div>
+
+    </div>
+    <p id="message" class="message"></p>
+
+    <div class="tips">
+      <h2>Cybersecurity</h2>
+      <ul>
+        <li>Use at least 12 characters</li>
+        <li>Do not reuse passwords.</li>
+        <li>Use numbers, syymbols, and uppercase letters</li>
+        <li>Never share your password with anyone</li>
+      </ul>
+    </div>
+    </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
